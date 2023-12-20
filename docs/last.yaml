@@ -1,0 +1,282 @@
+openapi: 3.1.0
+info:
+  title: Easy PHP Api Framework
+  description: External API for Easy PHP Api Framework
+  version: 0.0.1
+
+servers:
+  - url: http://localhost:8000/v1
+    description: Local Server
+
+tags:
+  - name: Systems
+    description: Requests to CRUD Systems
+
+paths:
+  /system:
+    get:
+      summary: Systems collection
+      tags:
+        - Systems
+      responses:
+        description: Systems collection
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SystemCollection'
+    post:
+      summary: Create new System
+      tags:
+        - Systems
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: 'Solar System'
+                age:
+                  type: integer
+                  example: 4571
+        responses:
+          '200':
+            description: System successfully created
+            content:
+              application/json:
+                schema:
+  /system/{id}:
+    get:
+      summary: Systems Entity data
+      parameters:
+        - $ref: '#/components/parameters/id'
+      tags:
+        - Systems
+      responses:
+        '200':
+          description: Systems Entity data
+          content:
+            - application/json:
+                schema:
+                  $ref: '#/components/schemas/System'
+
+        '404':
+          description: Systems Entity not found
+          content:
+            - application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+    put:
+      summary: Update existing System
+      tags:
+        - Systems
+      parameters:
+        - $ref: '#/components/parameters/id'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: 'Solar System Updated'
+                age:
+                  type: integer
+                  example: 4571
+      responses:
+        '200':
+          description: System successfully updated
+          content:
+            - application/json:
+              schema:
+                $ref: '#/components/schemas/System'
+        '400':
+          description: Validation Errors
+          content:
+            - application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Systems Entity not found
+          content:
+            - application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+    delete:
+      summary: Delete an existing system
+      tags:
+        - Systems
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '204':
+          description: The System as successfully deleted
+          content:
+            - application/json:
+              schema:
+                $ref: '#/components/schemas/System'
+        '400':
+          description: The object cannot be deleted
+          content:
+            - application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Systems Entity not found
+          content:
+            - application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+  parameters:
+    id:
+      in: path
+      name: id
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+      description: Model ID
+
+  responses:
+    NotFound:
+      description: Object explaining what went wrong
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/NotFoundError'
+security:
+  - XDebug: []
+components:
+  securitySchemes:
+    XDebug:
+      type:
+        - apiKey
+      in: query
+      name: XDEBUG_SESSION_START
+      example: 1
+      schema:
+        type: integer
+  schemas:
+    NotFoundError:
+      allOf:
+        - $ref: '#/components/schemas/Error'
+        - type:
+          - object
+          properties:
+            name:
+              example: Not Found
+            code:
+              minimum: 404
+              maximum: 404
+              example: 404
+    Error:
+      type:
+        - object
+      required:
+        - message
+        - code
+        - trace
+      properties:
+        message:
+          type:
+            - string
+        code:
+          type:
+            - integer
+          minimum: 400
+          maximum: 600
+        trace:
+          type:
+            - array
+          description: \* Available only in debug mode
+          items:
+            type: string
+
+    Collection:
+      type:
+        - object
+      required:
+        - totalCount
+        - pageCount
+        - currentPage
+        - perPage
+        - items
+      properties:
+        totalCount:
+          type:
+            - integer
+        pageCount:
+          type:
+            - integer
+        currentPage:
+          type:
+            - integer
+        perPage:
+          type:
+            - integer
+        items:
+          type:
+            - array
+          items:
+            oneOf:
+              - type: integer
+              - type: object
+      example:
+        totalCount: 0
+        pageCount: 1
+        currentPage: 1
+        perPage: 20
+        items: [ ]
+    SystemCollection:
+      allOf:
+        - $ref: '#/components/schemas/Collection'
+        - type:
+            - object
+          properties:
+            items:
+              type:
+                - array
+              items:
+                oneOf:
+                  - type: integer
+                  - $ref: '#/components/schemas/System'
+    System:
+      type:
+        - object
+      properties:
+        id:
+          type:
+            - integer
+        name:
+          type:
+            - string
+        age:
+          type:
+            - integer
+
+    Planet:
+      type:
+        - object
+      properties:
+        id:
+          type:
+            - integer
+        name:
+          type:
+            - string
+        mass:
+          type:
+            - string
+  parameters:
+    id:
+      in: path
+      name: id
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+      description: Entity ID
