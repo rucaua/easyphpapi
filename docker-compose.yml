@@ -1,0 +1,57 @@
+version: "3.7"
+
+volumes:
+  dbdata:
+
+services:
+  app:
+    build:
+      args:
+        xDebugEnabled: 1
+      context: ./
+      dockerfile: Dockerfile
+    container_name: easyphpapi-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./app:/var/app
+      - ./public:/var/www
+    networks:
+      - easyphpapi
+
+  mysql:
+    image: mysql:8.2
+    ports:
+      - 13306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - easyphpapi
+
+  nginx:
+    image: nginx:alpine
+    container_name: easyphpapi-nginx
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./public:/var/www
+      - ./containers-config/nginx:/etc/nginx/conf.d/
+    networks:
+      - easyphpapi
+
+  api-docs:
+    image: swaggerapi/swagger-ui
+    ports:
+      - 8081:8080
+    volumes:
+      - ./docs/:/docs:delegated
+      - ./docs/last.yaml:/usr/share/nginx/html/last.yaml:delegated
+    environment:
+      - URL=last.yaml
+
+networks:
+  easyphpapi:
+    driver: bridge

@@ -1,0 +1,39 @@
+{
+  "name": "rucaua/easyphpapi",
+  "description": "Easy PHP Api Framework",
+  "keywords": [
+    "api",
+    "php",
+    "framework",
+    "Easy PHP Api Framework"
+  ],
+  "type": "project",
+  "license": "MIT",
+  "version": "0.0.1",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Maskym Tymofeiev",
+      "email": "tymofeiv.m@gmail.com",
+      "role": "Founder and project lead"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "cycle/orm": "^2.5",
+    "cycle/annotated": "^3.4"
+  },
+  "repositories": {
+    "composer": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": ""
+    }
+  }
+}
