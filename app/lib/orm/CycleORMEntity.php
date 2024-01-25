@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace app\lib\orm;
 
-use app\lib\core\App;
+use rucaua\epa\core\App;
 use rucaua\epa\request\RequestInterface;
 use Cycle\ORM\EntityManager;
 use Cycle\ORM\RepositoryInterface;

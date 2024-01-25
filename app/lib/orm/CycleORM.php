@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace app\lib\orm;
 
-use app\lib\core\interfaces\ConnectionInterface;
+use rucaua\epa\core\interfaces\ConnectionInterface;
 use Cycle\Annotated;
 use Cycle\Database;
 use Cycle\Database\Config\MySQL\DsnConnectionConfig;
