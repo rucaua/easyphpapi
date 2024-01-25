@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91f4e422fbc6c719a29da29f25ea67db",
+    "content-hash": "c07933132f21e43f71043306d966724d",
     "packages": [
         {
             "name": "cycle/annotated",
@@ -58,16 +58,16 @@
         },
         {
             "name": "cycle/database",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cycle/database.git",
-                "reference": "0b4d063eecb031576be65db06d910aaae9bcf17c"
+                "reference": "74d674412ca4e405070d6748d31b3421ff61ec72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cycle/database/zipball/0b4d063eecb031576be65db06d910aaae9bcf17c",
-                "reference": "0b4d063eecb031576be65db06d910aaae9bcf17c",
+                "url": "https://api.github.com/repos/cycle/database/zipball/74d674412ca4e405070d6748d31b3421ff61ec72",
+                "reference": "74d674412ca4e405070d6748d31b3421ff61ec72",
                 "shasum": ""
             },
             "require": {
@@ -85,8 +85,8 @@
                 "infection/infection": "^0.26.10",
                 "mockery/mockery": "^1.5",
                 "phpunit/phpunit": "^9.5",
-                "spiral/tokenizer": "^2.13",
-                "vimeo/psalm": "^4.23"
+                "spiral/tokenizer": "^2.14 | ^3.0",
+                "vimeo/psalm": "^5.18"
             },
             "type": "library",
             "autoload": {
@@ -102,31 +102,63 @@
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                }
+            ],
             "description": "DBAL, schema introspection, migration and pagination",
+            "homepage": "https://cycle-orm.dev",
+            "keywords": [
+                "database",
+                "dbal",
+                "mssql",
+                "mysql",
+                "orm",
+                "postgresql",
+                "query-builder",
+                "sql",
+                "sqlite"
+            ],
             "support": {
+                "chat": "https://discord.gg/TFeEmCs",
+                "docs": "https://cycle-orm.dev/docs",
                 "issues": "https://github.com/cycle/database/issues",
-                "source": "https://github.com/cycle/database/tree/2.7.0"
+                "source": "https://github.com/cycle/database"
             },
             "funding": [
                 {
-                    "url": "https://github.com/roadrunner-server",
+                    "url": "https://github.com/sponsors/roadrunner-server",
                     "type": "github"
                 }
             ],
-            "time": "2023-12-04T16:36:48+00:00"
+            "time": "2023-12-21T20:57:38+00:00"
         },
         {
             "name": "cycle/orm",
-            "version": "v2.5.0",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cycle/orm.git",
-                "reference": "c8500a5f53ab6037141ed85a0a4a68c62f133160"
+                "reference": "1cf556d9c74393006ae5debfd9059c4523499aee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cycle/orm/zipball/c8500a5f53ab6037141ed85a0a4a68c62f133160",
-                "reference": "c8500a5f53ab6037141ed85a0a4a68c62f133160",
+                "url": "https://api.github.com/repos/cycle/orm/zipball/1cf556d9c74393006ae5debfd9059c4523499aee",
+                "reference": "1cf556d9c74393006ae5debfd9059c4523499aee",
                 "shasum": ""
             },
             "require": {
@@ -139,7 +171,7 @@
             "require-dev": {
                 "doctrine/collections": "^1.6 || ^2.0",
                 "illuminate/collections": "^8.0",
-                "loophp/collection": "^6.0",
+                "loophp/collection": "^6.0 || ^7.0",
                 "mockery/mockery": "^1.1",
                 "phpunit/phpunit": "^9.5",
                 "ramsey/uuid": "^4.0",
@@ -159,7 +191,7 @@
             "description": "PHP DataMapper ORM and Data Modelling Engine",
             "support": {
                 "issues": "https://github.com/cycle/orm/issues",
-                "source": "https://github.com/cycle/orm/tree/v2.5.0"
+                "source": "https://github.com/cycle/orm/tree/v2.6.1"
             },
             "funding": [
                 {
@@ -167,24 +199,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-25T15:17:31+00:00"
+            "time": "2024-01-04T12:09:49+00:00"
         },
         {
             "name": "cycle/schema-builder",
-            "version": "v2.6.1",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cycle/schema-builder.git",
-                "reference": "7f2f4269c3d39005ecb749d45e387e07e62b1af7"
+                "reference": "67da7e79f6e7638f3d1f1068ade394461a1516aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cycle/schema-builder/zipball/7f2f4269c3d39005ecb749d45e387e07e62b1af7",
-                "reference": "7f2f4269c3d39005ecb749d45e387e07e62b1af7",
+                "url": "https://api.github.com/repos/cycle/schema-builder/zipball/67da7e79f6e7638f3d1f1068ade394461a1516aa",
+                "reference": "67da7e79f6e7638f3d1f1068ade394461a1516aa",
                 "shasum": ""
             },
             "require": {
-                "cycle/database": "^2.5",
+                "cycle/database": "^2.7.1",
                 "cycle/orm": "^2.0",
                 "php": ">=8.0",
                 "yiisoft/friendly-exception": "^1.1"
@@ -192,6 +224,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.5",
                 "spiral/tokenizer": "^2.8",
+                "symfony/console": "^6.0 || ^7.0",
                 "vimeo/psalm": "^5.12"
             },
             "type": "library",
@@ -207,9 +240,9 @@
             "description": "Cycle ORM Schema Builder",
             "support": {
                 "issues": "https://github.com/cycle/schema-builder/issues",
-                "source": "https://github.com/cycle/schema-builder/tree/v2.6.1"
+                "source": "https://github.com/cycle/schema-builder/tree/v2.7.0"
             },
-            "time": "2023-11-24T13:12:50+00:00"
+            "time": "2024-01-10T09:48:52+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -289,16 +322,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff"
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/2930cd5ef353871c821d5c43ed030d39ac8cfe65",
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65",
                 "shasum": ""
             },
             "require": {
@@ -360,7 +393,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.8"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.9"
             },
             "funding": [
                 {
@@ -376,7 +409,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-16T13:40:37+00:00"
+            "time": "2024-01-15T18:05:13+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -730,16 +763,16 @@
         },
         {
             "name": "rucaua/epa-actions",
-            "version": "dev-main",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rucaua/epa-actions.git",
-                "reference": "2e152dd84edcd2231b8879ad27fd2ceea69eb956"
+                "reference": "57cb8d249938758b7aef3a36707e1444768e02ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rucaua/epa-actions/zipball/2e152dd84edcd2231b8879ad27fd2ceea69eb956",
-                "reference": "2e152dd84edcd2231b8879ad27fd2ceea69eb956",
+                "url": "https://api.github.com/repos/rucaua/epa-actions/zipball/57cb8d249938758b7aef3a36707e1444768e02ea",
+                "reference": "57cb8d249938758b7aef3a36707e1444768e02ea",
                 "shasum": ""
             },
             "require": {
@@ -747,7 +780,6 @@
                 "rucaua/epa-request": "*",
                 "rucaua/epa-response": "*"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -767,13 +799,56 @@
             "description": " Abstract collection of CRUD actions",
             "support": {
                 "issues": "https://github.com/rucaua/epa-actions/issues",
-                "source": "https://github.com/rucaua/epa-actions/tree/main"
+                "source": "https://github.com/rucaua/epa-actions/tree/0.0.3"
             },
-            "time": "2024-01-25T22:23:11+00:00"
+            "time": "2024-01-25T23:30:47+00:00"
+        },
+        {
+            "name": "rucaua/epa-core",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rucaua/epa-core.git",
+                "reference": "457101d4b5dd0cedb60caa19d08820fcb7f04d29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rucaua/epa-core/zipball/457101d4b5dd0cedb60caa19d08820fcb7f04d29",
+                "reference": "457101d4b5dd0cedb60caa19d08820fcb7f04d29",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "rucaua/epa-actions": "*",
+                "rucaua/epa-request": "*",
+                "rucaua/epa-response": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "rucaua\\epa\\core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksym Tymofeiev",
+                    "email": "tymofeiev.m@gmail.com"
+                }
+            ],
+            "description": "core classes for easyPhpApi",
+            "support": {
+                "issues": "https://github.com/rucaua/epa-core/issues",
+                "source": "https://github.com/rucaua/epa-core/tree/0.0.2"
+            },
+            "time": "2024-01-25T23:27:45+00:00"
         },
         {
             "name": "rucaua/epa-request",
-            "version": "dev-main",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rucaua/epa-request.git",
@@ -788,7 +863,6 @@
             "require": {
                 "php": ">=8.2"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -808,28 +882,27 @@
             "description": "Abstract request object",
             "support": {
                 "issues": "https://github.com/rucaua/epa-request/issues",
-                "source": "https://github.com/rucaua/epa-request/tree/main"
+                "source": "https://github.com/rucaua/epa-request/tree/0.0.1"
             },
             "time": "2024-01-25T21:30:00+00:00"
         },
         {
             "name": "rucaua/epa-response",
-            "version": "dev-main",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rucaua/epa-response.git",
-                "reference": "0d092a0c01e96aefdea02d03179bb4e3d976a875"
+                "reference": "c81e9b01c98ff5a6fd4639c1a06f4a0c597220ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rucaua/epa-response/zipball/0d092a0c01e96aefdea02d03179bb4e3d976a875",
-                "reference": "0d092a0c01e96aefdea02d03179bb4e3d976a875",
+                "url": "https://api.github.com/repos/rucaua/epa-response/zipball/c81e9b01c98ff5a6fd4639c1a06f4a0c597220ca",
+                "reference": "c81e9b01c98ff5a6fd4639c1a06f4a0c597220ca",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -849,44 +922,36 @@
             "description": "Abstract response object",
             "support": {
                 "issues": "https://github.com/rucaua/epa-response/issues",
-                "source": "https://github.com/rucaua/epa-response/tree/main"
+                "source": "https://github.com/rucaua/epa-response/tree/0.0.1"
             },
-            "time": "2024-01-25T21:33:02+00:00"
+            "time": "2024-01-25T23:05:09+00:00"
         },
         {
             "name": "spiral/attributes",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/attributes.git",
-                "reference": "1c990f2886e1291996051bb0d9624eb31bf6dc62"
+                "reference": "e26960cca151bbb31bfd374d0c34d172635833f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/attributes/zipball/1c990f2886e1291996051bb0d9624eb31bf6dc62",
-                "reference": "1c990f2886e1291996051bb0d9624eb31bf6dc62",
+                "url": "https://api.github.com/repos/spiral/attributes/zipball/e26960cca151bbb31bfd374d0c34d172635833f6",
+                "reference": "e26960cca151bbb31bfd374d0c34d172635833f6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "psr/cache": ">=1.0",
+                "psr/cache": "1 - 3",
                 "psr/simple-cache": "1 - 3"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.12 || ^2.0",
+                "doctrine/annotations": "^1.14 || ^2.0",
                 "jetbrains/phpstorm-attributes": "^1.0",
                 "phpunit/phpunit": "^9.5.20",
                 "vimeo/psalm": "^5.17"
             },
-            "suggest": {
-                "doctrine/annotations": "^1.0 || ^2.0 for Doctrine metadata driver support"
-            },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1.x-dev"
-                }
-            },
             "autoload": {
                 "files": [
                     "src/polyfill.php"
@@ -901,30 +966,60 @@
             ],
             "authors": [
                 {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                },
+                {
                     "name": "Kirill Nesmeyanov (SerafimArts)",
                     "email": "kirill.nesmeyanov@spiralscout.com"
                 }
             ],
             "description": "PHP attributes reader",
             "homepage": "https://spiral.dev",
+            "keywords": [
+                "annotations",
+                "attributes",
+                "metadata"
+            ],
             "support": {
+                "chat": "https://discord.gg/V6EK4he",
+                "docs": "https://spiral.dev/docs",
+                "forum": "https://forum.spiral.dev",
                 "issues": "https://github.com/spiral/attributes/issues",
                 "source": "https://github.com/spiral/attributes"
             },
-            "time": "2023-12-08T05:39:10+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/roadrunner-server",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-12-14T08:44:32+00:00"
         },
         {
             "name": "spiral/core",
-            "version": "3.10.1",
+            "version": "3.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/core.git",
-                "reference": "8f7926025d25734a49d23b127004dd1cab1a7e98"
+                "reference": "8147d305a2a1e06fa498fe2d8ab32097451a6b34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/core/zipball/8f7926025d25734a49d23b127004dd1cab1a7e98",
-                "reference": "8f7926025d25734a49d23b127004dd1cab1a7e98",
+                "url": "https://api.github.com/repos/spiral/core/zipball/8147d305a2a1e06fa498fe2d8ab32097451a6b34",
+                "reference": "8147d305a2a1e06fa498fe2d8ab32097451a6b34",
                 "shasum": ""
             },
             "require": {
@@ -942,7 +1037,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.11.x-dev"
+                    "dev-master": "3.12.x-dev"
                 }
             },
             "autoload": {
@@ -978,26 +1073,26 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/core"
             },
-            "time": "2023-12-05T18:19:25+00:00"
+            "time": "2023-12-21T14:43:04+00:00"
         },
         {
             "name": "spiral/logger",
-            "version": "3.10.1",
+            "version": "3.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/logger.git",
-                "reference": "771631092ff63339d58a81f0d3aa66cc6c31c327"
+                "reference": "c88f6b2286487347e6dcdaca1eaa510f68b2da20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/logger/zipball/771631092ff63339d58a81f0d3aa66cc6c31c327",
-                "reference": "771631092ff63339d58a81f0d3aa66cc6c31c327",
+                "url": "https://api.github.com/repos/spiral/logger/zipball/c88f6b2286487347e6dcdaca1eaa510f68b2da20",
+                "reference": "c88f6b2286487347e6dcdaca1eaa510f68b2da20",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
                 "psr/log": "1 - 3",
-                "spiral/core": "^3.10.1"
+                "spiral/core": "^3.11.1"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
@@ -1007,7 +1102,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.11.x-dev"
+                    "dev-master": "3.12.x-dev"
                 }
             },
             "autoload": {
@@ -1043,20 +1138,20 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/logger"
             },
-            "time": "2023-12-12T11:45:48+00:00"
+            "time": "2023-12-29T10:41:05+00:00"
         },
         {
             "name": "spiral/pagination",
-            "version": "3.10.1",
+            "version": "3.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/pagination.git",
-                "reference": "29808d0a62053a1aa1a69d1e9bba43ec026c4904"
+                "reference": "71fdc75ff5801d8794fb3aeb19af5edf734b07b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/pagination/zipball/29808d0a62053a1aa1a69d1e9bba43ec026c4904",
-                "reference": "29808d0a62053a1aa1a69d1e9bba43ec026c4904",
+                "url": "https://api.github.com/repos/spiral/pagination/zipball/71fdc75ff5801d8794fb3aeb19af5edf734b07b1",
+                "reference": "71fdc75ff5801d8794fb3aeb19af5edf734b07b1",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1165,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.11.x-dev"
+                    "dev-master": "3.12.x-dev"
                 }
             },
             "autoload": {
@@ -1106,40 +1201,40 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/pagination"
             },
-            "time": "2023-11-24T08:28:31+00:00"
+            "time": "2023-12-21T14:43:25+00:00"
         },
         {
             "name": "spiral/tokenizer",
-            "version": "3.10.1",
+            "version": "3.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/tokenizer.git",
-                "reference": "dfbf27114313ae95bbe34e38b7faf5cbf97d4e7c"
+                "reference": "67be0d5e6493740008a2cee2cc26bea30a4a513b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/tokenizer/zipball/dfbf27114313ae95bbe34e38b7faf5cbf97d4e7c",
-                "reference": "dfbf27114313ae95bbe34e38b7faf5cbf97d4e7c",
+                "url": "https://api.github.com/repos/spiral/tokenizer/zipball/67be0d5e6493740008a2cee2cc26bea30a4a513b",
+                "reference": "67be0d5e6493740008a2cee2cc26bea30a4a513b",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
                 "php": ">=8.1",
-                "spiral/core": "^3.10.1",
-                "spiral/logger": "^3.10.1",
+                "spiral/core": "^3.11.1",
+                "spiral/logger": "^3.11.1",
                 "symfony/finder": "^5.3.7 || ^6.0 || ^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.1",
                 "spiral/attributes": "^2.8|^3.0",
-                "spiral/boot": "^3.10.1",
-                "spiral/files": "^3.10.1",
+                "spiral/boot": "^3.11.1",
+                "spiral/files": "^3.11.1",
                 "vimeo/psalm": "^5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.11.x-dev"
+                    "dev-master": "3.12.x-dev"
                 }
             },
             "autoload": {
@@ -1175,7 +1270,7 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/tokenizer"
             },
-            "time": "2023-12-12T11:46:08+00:00"
+            "time": "2023-12-29T10:41:21+00:00"
         },
         {
             "name": "symfony/finder",
@@ -1467,11 +1562,8 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "rucaua/epa-actions": 20,
-        "rucaua/epa-request": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -10,7 +10,6 @@
   "type": "project",
   "license": "MIT",
   "version": "0.0.1",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Maskym Tymofeiev",
@@ -24,9 +23,10 @@
     "ext-pdo": "*",
     "cycle/orm": "^2.5",
     "cycle/annotated": "^3.4",
-    "rucaua/epa-actions": "dev-main",
-    "rucaua/epa-request": "dev-main",
-    "rucaua/epa-response": "dev-main"
+    "rucaua/epa-actions": "*",
+    "rucaua/epa-request": "*",
+    "rucaua/epa-response": "*",
+    "rucaua/epa-core": "*"
   },
   "repositories": {
     "composer": {
