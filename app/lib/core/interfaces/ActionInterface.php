@@ -2,8 +2,8 @@
 
 namespace app\lib\core\interfaces;
 
-use app\lib\request\RequestInterface;
-use app\lib\response\ResponseInterface;
+use rucaua\epa\request\RequestInterface;
+use rucaua\epa\response\ResponseInterface;
 use JetBrains\PhpStorm\NoReturn;
 
 interface ActionInterface

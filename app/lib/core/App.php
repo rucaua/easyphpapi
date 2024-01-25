@@ -6,18 +6,18 @@ namespace app\lib\core;
 
 use app\lib\core\exceptions\ApplicationException;
 use app\lib\core\exceptions\InvalidConfigException;
-use app\lib\core\exceptions\NotFoundException;
 use app\lib\core\interfaces\ActionInterface;
 use app\lib\core\interfaces\BaseAppConfigInterface;
 use app\lib\core\interfaces\ConnectionInterface;
-use app\lib\core\interfaces\EntityInterface;
-use app\lib\request\InvalidRequestException;
-use app\lib\request\Request;
-use app\lib\request\RequestType;
-use app\lib\response\ResponseInterface;
+use rucaua\epa\request\InvalidRequestException;
+use rucaua\epa\request\Request;
+use rucaua\epa\request\RequestType;
+use rucaua\epa\response\ResponseInterface;
 use Cycle\ORM\Exception\ConfigException;
 use Exception;
 use JetBrains\PhpStorm\NoReturn;
+use rucaua\epa\actions\EntityInterface;
+use rucaua\epa\actions\NotFoundException;
 
 
 /**

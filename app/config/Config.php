@@ -4,14 +4,14 @@ namespace app\config;
 
 use app\entities\Planet;
 use app\entities\System;
-use app\lib\actions\ActionConfigTrait;
+use rucaua\epa\actions\ActionConfigTrait;
 use app\lib\core\interfaces\BaseAppConfigInterface;
 use app\lib\core\interfaces\ConnectionInterface;
 use app\lib\orm\CycleORM;
-use app\lib\request\Request;
-use app\lib\request\RequestInterface;
-use app\lib\response\JsonResponse;
-use app\lib\response\ResponseInterface;
+use rucaua\epa\request\Request;
+use rucaua\epa\request\RequestInterface;
+use rucaua\epa\response\JsonResponse;
+use rucaua\epa\response\ResponseInterface;
 
 
 readonly class Config implements BaseAppConfigInterface
