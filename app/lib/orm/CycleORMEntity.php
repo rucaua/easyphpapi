@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace app\lib\orm;
 
 use app\lib\core\App;
-use app\lib\core\interfaces\EntityInterface;
-use app\lib\request\RequestInterface;
+use rucaua\epa\request\RequestInterface;
 use Cycle\ORM\EntityManager;
 use Cycle\ORM\RepositoryInterface;
+use rucaua\epa\actions\EntityInterface;
 
 abstract class CycleORMEntity implements EntityInterface
 {

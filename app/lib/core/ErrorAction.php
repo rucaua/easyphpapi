@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace app\lib\core;
 
-use app\lib\actions\BaseAction;
+use rucaua\epa\actions\BaseAction;
 use Exception;
 use JetBrains\PhpStorm\NoReturn;
 

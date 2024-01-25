@@ -23,7 +23,10 @@
     "ext-json": "*",
     "ext-pdo": "*",
     "cycle/orm": "^2.5",
-    "cycle/annotated": "^3.4"
+    "cycle/annotated": "^3.4",
+    "rucaua/epa-actions": "dev-main",
+    "rucaua/epa-request": "dev-main",
+    "rucaua/epa-response": "dev-main"
   },
   "repositories": {
     "composer": {
